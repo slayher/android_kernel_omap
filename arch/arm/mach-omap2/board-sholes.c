@@ -139,31 +139,40 @@ static struct omap_opp sholes_mpu_rate_table[] = {
 	{S800M, VDD1_OPP7, 0x44},
 #endif
 #ifdef CONFIG_MACH_SHOLES_CLOCK_900
-       {S300M, VDD1_OPP1, 0x22},
-       {S400M, VDD1_OPP2, 0x24},
-       {S500M, VDD1_OPP3, 0x27},
+       {S300M, VDD1_OPP1, 0x24},
+       {S400M, VDD1_OPP2, 0x25},
+       {S500M, VDD1_OPP3, 0x2F},
        {S600M, VDD1_OPP4, 0x34},
        {S700M, VDD1_OPP5, 0x36},
        {S800M, VDD1_OPP6, 0x3B},
        {S900M, VDD1_OPP7, 0x3E},
 #endif
+#ifdef CONFIG_MACH_SHOLES_CLOCK_1000
+       {S250M, VDD1_OPP1, 0x22},
+       {S400M, VDD1_OPP2, 0x24},
+       {S600M, VDD1_OPP3, 0x34},
+       {S700M, VDD1_OPP4, 0x36},
+       {S800M, VDD1_OPP5, 0x3B},
+       {S900M, VDD1_OPP6, 0x3F},
+       {S1000M, VDD1_OPP7, 0x4D},
+#endif
 #ifdef CONFIG_MACH_SHOLES_CLOCK_1100
        {S250M, VDD1_OPP1, 0x22},
        {S400M, VDD1_OPP2, 0x24},
-       {S500M, VDD1_OPP3, 0x27},
-       {S600M, VDD1_OPP4, 0x34},
-       {S800M, VDD1_OPP5, 0x3B},
-       {S1000M, VDD1_OPP6, 0x42},
-       {S1100M, VDD1_OPP7, 0x4E},
+       {S600M, VDD1_OPP3, 0x34},
+       {S800M, VDD1_OPP4, 0x3B},
+       {S900M, VDD1_OPP5, 0x3F},
+       {S1000M, VDD1_OPP6, 0x4D},
+       {S1100M, VDD1_OPP7, 0x50},
 #endif
 #ifdef CONFIG_MACH_SHOLES_CLOCK_1200
-       {S300M, VDD1_OPP1, 0x22},
-       {S500M, VDD1_OPP2, 0x27},
+       {S300M, VDD1_OPP1, 0x24},
+       {S500M, VDD1_OPP2, 0x2F},
        {S700M, VDD1_OPP3, 0x36},
-       {S900M, VDD1_OPP4, 0x3E},
-       {S1000M, VDD1_OPP5, 0x42},
-       {S1100M, VDD1_OPP6, 0x4E},
-       {S1200M, VDD1_OPP7, 0x50},
+       {S900M, VDD1_OPP4, 0x3F},
+       {S1000M, VDD1_OPP5, 0x4D},
+       {S1100M, VDD1_OPP6, 0x50},
+       {S1200M, VDD1_OPP7, 0x52},
 #endif
 
 };

@@ -149,10 +149,13 @@ config MACH_SHOLES_CLOCK_STOCK
 	bool "Stock 550/600mhz"
 
 config MACH_SHOLES_CLOCK_900
-	bool "Overclock 800mhz"
+	bool "Overclock 900mhz"
+
+config MACH_SHOLES_CLOCK_1000
+	bool "Overclock 1000mhz"
 
 config MACH_SHOLES_CLOCK_1100
-	bool "Overclock 1000mhz"
+	bool "Overclock 1100mhz"
 
 config MACH_SHOLES_CLOCK_1200
 	bool "Overclock 1200mhz"
@@ -188,12 +191,12 @@ config MACH_SHOLES_FREQ_5
 	default "600000000"
 
 config MACH_SHOLES_FREQ_6
-	int "Freq slot 5 in Hz"
+	int "Freq slot 6 in Hz"
 	depends on MACH_SHOLES_CLOCK_MANUAL
 	default "700000000"
 
 config MACH_SHOLES_FREQ_7
-	int "Freq slot 5 in Hz"
+	int "Freq slot 7 in Hz"
 	depends on MACH_SHOLES_CLOCK_MANUAL
 	default "800000000"
 
